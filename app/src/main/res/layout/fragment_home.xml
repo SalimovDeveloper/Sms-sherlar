@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#CCC9C9"
+    tools:context=".fragments.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#9A9999"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/sms_nsherlar"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:padding="8dp"
+        android:orientation="horizontal"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_yangilar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#F8C500"
+            app:cardCornerRadius="20dp"
+            android:outlineSpotShadowColor="#F8C500"
+            android:outlineAmbientShadowColor="#F8C500"
+            app:cardMaxElevation="100dp"
+            android:elevation="100dp"
+            app:cardElevation="15dp"
+            android:layout_marginBottom="30dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/card_saqlangan"
+            android:layout_marginRight="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:padding="15dp"
+                        android:layout_weight="0.5"
+                        android:src="@drawable/ruyhat"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Yangilar    "
+                        android:textSize="22sp"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:textColor="#B99303"
+                        android:layout_marginRight="30dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/yangi_count"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="122"
+                        android:textSize="30sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:gravity="right"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="ta"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:paddingLeft="5dp"
+                        android:textColor="#B99303"
+                        android:gravity="left"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_saqlangan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#EA1655"
+            app:cardCornerRadius="20dp"
+            android:outlineSpotShadowColor="#EA1655"
+            android:outlineAmbientShadowColor="#EA1655"
+            app:cardMaxElevation="100dp"
+            android:elevation="100dp"
+            app:cardElevation="15dp"
+            android:layout_marginBottom="30dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/card_yangilar"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    >
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.28"
+                        android:paddingStart="13dp"
+                        android:src="@drawable/saqlanganlar"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/saqlanganlar"
+                        android:textSize="22sp"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:textColor="#FFA6B6"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:paddingLeft="10dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/saqlangan_count"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="122"
+                        android:textSize="30sp"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:gravity="right"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="ta"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:paddingLeft="5dp"
+                        android:textColor="#FFA6B6"
+                        android:gravity="left"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:padding="8dp"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_sevgi_sherlari"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            android:elevation="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/card_tabrik_sherlari"
+            app:layout_constraintRight_toLeftOf="@+id/card_soginch_sherlari"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:padding="10dp"
+                    android:src="@drawable/sevgi_sherlar"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/sevgi_sherlari"
+                    android:textSize="20sp"
+                    android:gravity="top|center"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_soginch_sherlari"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            android:elevation="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/card_ota_ona_sherlari"
+            app:layout_constraintLeft_toRightOf="@+id/card_sevgi_sherlari"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:padding="10dp"
+                    android:src="@drawable/soginch_sherlari"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/sog_inch_armon"
+                    android:textSize="20sp"
+                    android:gravity="top|center"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_tabrik_sherlari"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            android:elevation="10dp"
+            app:layout_constraintRight_toLeftOf="@+id/card_ota_ona_sherlari"
+            app:layout_constraintBottom_toTopOf="@+id/card_dostlik_sherlari"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_sevgi_sherlari"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:padding="10dp"
+                    android:src="@drawable/tabrik_sherlari"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/tabrik_sherlari"
+                    android:textSize="20sp"
+                    android:gravity="top|center"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_ota_ona_sherlari"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            android:elevation="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/card_hazil_sherlari"
+            app:layout_constraintLeft_toRightOf="@+id/card_tabrik_sherlari"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card_soginch_sherlari"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:padding="10dp"
+                    android:src="@drawable/ota_ona_sherlari"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/ota_ona_sherlari"
+                    android:textSize="20sp"
+                    android:gravity="top|center"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_dostlik_sherlari"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            android:elevation="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_tabrik_sherlari"
+            app:layout_constraintRight_toLeftOf="@+id/card_hazil_sherlari"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:padding="10dp"
+                    android:src="@drawable/dostlik_sherlari"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/do_stlik_sherlari"
+                    android:textSize="20sp"
+                    android:gravity="top|center"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_hazil_sherlari"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            android:elevation="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_ota_ona_sherlari"
+            app:layout_constraintLeft_toRightOf="@+id/card_dostlik_sherlari"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:padding="10dp"
+                    android:src="@drawable/xazil_sherlari"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/hazil_sherlari"
+                    android:textSize="20sp"
+                    android:gravity="top|center"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

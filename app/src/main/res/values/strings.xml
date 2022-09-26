@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SMS Sherlar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sms_nsherlar">SMS \nSHERLAR</string>
+    <string name="saqlanganlar">Saqlanganlar</string>
+    <string name="sevgi_sherlari">Sevgi sherlari</string>
+    <string name="sog_inch_armon">Sog\'inch armon</string>
+    <string name="tabrik_sherlari">Tabrik sherlari</string>
+    <string name="ota_ona_sherlari">Ota-Ona sherlari</string>
+    <string name="do_stlik_sherlari">Do\'stlik sherlari</string>
+    <string name="hazil_sherlari">Hazil sherlari</string>
+</resources>
